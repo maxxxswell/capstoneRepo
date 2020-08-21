@@ -1,7 +1,7 @@
 import arcpy
 import os
 
-arcpy.env.workspace = r"d:/PennState/CapstoneProject/TrainAccessibility.gdb/"
+arcpy.env.workspace = r"myRoutes.gdb"
 
 featureClasses = []
 
