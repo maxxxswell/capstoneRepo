@@ -11,4 +11,4 @@ for dirpath, dirnames, filenames in arcpy.da.Walk(arcpy.env.workspace, datatype=
         if desc.shapeType == "Polyline":
             featureClasses.append(os.path.join(dirpath, filename))
 
-arcpy.Merge_management(featureClasses, r"d:/PennState/CapstoneProject/Access.gdb/mergedTrainRoutes")
+arcpy.Merge_management(featureClasses, r"myDestination/myFileName)
