@@ -1,5 +1,5 @@
 # Author: Max McDonald
-# Name:solveRoutes.py
+# Name: solveRoutes.py
 # Description: Takes a set of network dataset stops
 # solves the best route in a network dataset
 # and saves it to a new location
@@ -11,10 +11,10 @@ import arcpy
 arcpy.CheckOutExtension('network')
 
 # set environments
-arcpy.env.workspace = r'myStops.gdb'
+arcpy.env.workspace = r'/myStops.gdb'
 
 # local variables
-networkDataset = r'myNetworkDataset.gdb/myNetworkDataset'
+networkDataset = r'/myNetworkDataset.gdb/myNetworkDataset'
 impedanceField = 'Minutes'
 inputOrder = 'USE_INPUT_ORDER'
 preservation = 'PRESERVE_BOTH'
@@ -43,7 +43,7 @@ counter = 0
 # loop through each OD in myStopsList
 for originDestination in myStopsList:
     # variables 
-    route = r'myRouteWorkspace.gdb/Route_' + str(counter).zfill(4)
+    route = r'/myRouteWorkspace.gdb/Route_' + str(counter).zfill(4)
     # make a temporary route layer
     arcpy.MakeRouteLayer_na(Network_ND, 
     network, impedanceField, inputOrder, preservation, windows, accumulators, 

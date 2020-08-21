@@ -1,5 +1,5 @@
 # Author: Max McDonald
-# Name: joinRoutes
+# Name: joinRoutes.py
 # Description: Walks through files in gdb and merges all
 # files that are polylines before saving merged files to 
 # a new location
@@ -9,7 +9,7 @@ import arcpy
 import os
 
 # set environments
-arcpy.env.workspace = r"myRoutes.gdb"
+arcpy.env.workspace = r"/myRouteWorkspace.gdb/"
 
 # create an empty list
 featureClasses = []
