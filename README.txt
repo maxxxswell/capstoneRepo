@@ -10,6 +10,7 @@ Requires:
 1. Working knowledge of ArcGIS Network Analyst 10.1+.
 2. Pre-processed stops that already lie within transportation networks.
 3. Pre-processed network dataset with desired parameters and restrictions.
+4. Designated geodatabases for stops and routes respectively.
 
 Please contact maxmcdonald014@gmail.com with questions or comments. 
 
