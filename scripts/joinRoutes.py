@@ -26,3 +26,5 @@ for dirpath, dirnames, filenames in arcpy.da.Walk(arcpy.env.workspace, datatype=
 
 # merge all feature classes in list 
 arcpy.Merge_management(featureClasses, r"myDestination/myFileName)
+
+# new line
