@@ -62,6 +62,6 @@ for originDestination in myStopsList:
     counter += 1
     # debugger
     print(route + 'saved')
-    # delete temproary layers
+    # delete temporary layers
     arcpy.Delete_management(network)
     arcpy.Delete_management(routeLayers)
