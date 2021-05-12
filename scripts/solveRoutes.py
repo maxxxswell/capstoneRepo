@@ -3,16 +3,12 @@
 # Description: Takes a set of network dataset stops
 # solves the best route in a network dataset
 # and saves it to a new location
-
 # import the arcpy module
 import arcpy
-
 # check out the network analyst extension
 arcpy.CheckOutExtension('network')
-
 # set environments
 arcpy.env.workspace = r'/myStops.gdb'
-
 # local variables
 networkDataset = r'/myNetworkDataset.gdb/myNetworkDataset'
 impedanceField = 'Minutes'
@@ -28,7 +24,6 @@ pathShape = 'TRUE_LINES_WITH_MEASURES'
 startDate = ''
 unlocatedStops = 'SKIP'
 solveError = 'TERMINATE'
-
 # immutable variables
 network = 'networkLayer'
 routeLayer1 = 'routeLayer'
@@ -39,7 +34,6 @@ routes = 'currentRoute'
 routeLayers = 'selectedRouteLayers'
 myStopsList = arcpy.ListFeatureClases()
 counter = 0
-
 # loop through each OD in myStopsList
 for originDestination in myStopsList:
     # variables 
